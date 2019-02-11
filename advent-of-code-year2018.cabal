@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: e406f46c353ff4e23fcd32aeb7fcc035d7d021dd740f17f4a6e25e513af74f48
+-- hash: 7dffee08fdb1b12fd67f14b984c3d292271f3d79afc41c1774887fc38b8d8e97
 
 name:           advent-of-code-year2018
 version:        0.1.0.0
@@ -27,6 +27,7 @@ source-repository head
 
 library
   exposed-modules:
+      Day1
       Lib
   other-modules:
       Paths_advent_of_code_year2018
@@ -34,6 +35,7 @@ library
       src
   build-depends:
       base >=4.7 && <5
+    , containers >=0.6 && <0.7
   default-language: Haskell2010
 
 executable advent-of-code-year2018-exe
@@ -46,6 +48,7 @@ executable advent-of-code-year2018-exe
   build-depends:
       advent-of-code-year2018
     , base >=4.7 && <5
+    , containers >=0.6 && <0.7
   default-language: Haskell2010
 
 test-suite advent-of-code-year2018-test
@@ -59,4 +62,5 @@ test-suite advent-of-code-year2018-test
   build-depends:
       advent-of-code-year2018
     , base >=4.7 && <5
+    , containers >=0.6 && <0.7
   default-language: Haskell2010
