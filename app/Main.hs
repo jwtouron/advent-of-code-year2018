@@ -5,6 +5,7 @@ import Day1 (solve1)
 import Day2 (solve2)
 import Day3 (solve3)
 import Day4 (solve4)
+import Day5 (solve5)
 
 main :: IO ()
 main = do
@@ -17,4 +18,5 @@ main = do
         "day2" -> solve2
         "day3" -> solve3
         "day4" -> solve4
+        "day5" -> solve5
         _      -> putStrLn $ "Unknown puzzle: " ++ puzzle
